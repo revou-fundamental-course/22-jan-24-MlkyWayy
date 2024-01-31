@@ -1,0 +1,345 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  right: 0;
+  left: 0;
+}
+
+nav h1 {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e57231;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu a {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  margin-left: 4rem;
+}
+
+.nav-menu a:hover {
+  border-bottom: 1px solid black;
+}
+
+.burger-menu {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+#home {
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  margin-top: 80px;
+}
+
+.slider img {
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.offer {
+  margin-top: 20px;
+  display: flex;
+  background-color: #1f2130;
+  color: white;
+  padding: 80px 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.offer h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.offer p {
+  font-size: 1.5rem;
+}
+
+.offer-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  margin-bottom: 30px;
+  width: 370px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.offer-card-text {
+  width: 90%;
+  z-index: 1;
+}
+
+.offer-card-text h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.offer-card-text p {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.offer-card img {
+  width: 50%;
+}
+
+#package {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.package-head {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.list-package {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-package {
+  box-shadow: 1px 1px 10px #888888;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+.card-package-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-package-text h1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card-package img {
+  width: 40%;
+  margin-right: 10px;
+}
+
+/* Breakpoint */
+
+@media only screen and (max-width: 600px) {
+  .nav-menu {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #888888;
+    z-index: 10;
+  }
+  .nav-menu li a {
+    margin-left: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    padding-bottom: 2px;
+  }
+  .nav-menu.show {
+    display: flex;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .slider {
+    min-height: 40vh;
+  }
+  .slider img {
+    width: 100%;
+  }
+  .card-package {
+    width: 300px;
+  }
+}
