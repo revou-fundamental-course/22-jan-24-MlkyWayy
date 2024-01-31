@@ -334,10 +334,7 @@ nav h1 {
     display: block;
   }
   .slider {
-    min-height: 40vh;
-  }
-  .slider img {
-    width: 100%;
+    min-height: 30vh;
   }
   .card-package {
     width: 300px;
