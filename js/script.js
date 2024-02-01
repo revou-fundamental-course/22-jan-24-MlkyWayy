@@ -25,3 +25,26 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 2000);
 }
+
+// Validate form
+
+const nama = document.getElementById("name");
+const email = document.getElementById("email");
+const form = document.getElementById("form");
+const errorElement = document.getElementById("error");
+
+form.addEventListener("submit", (e) => {
+  let messages = [];
+  if (nama.value === "" || nama.value == null) {
+    messages.push("Name is required");
+  }
+
+  if (email.value === "" || email.value == null) {
+    messages.push("Email is required");
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(", ");
+  }
+});
